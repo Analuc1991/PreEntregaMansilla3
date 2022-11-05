@@ -1,0 +1,84 @@
+header {
+    color: yellow;
+}
+
+nav {
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+nav a{
+    font-weight: 8800;
+    text-decoration: none;
+    font-size: 25px;
+}
+.cuerpo {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #f0dc0a, #f1e429, #f3ed3d, #f4f54e, #f6fd5d);;
+ } 
+
+ .contactate {
+    margin-top: 30px;
+ }
+
+
+.img--contacto {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.img--contacto img {
+    height: 450px;
+    width: 450px;
+    margin-top: 25px;
+}
+.contactate h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.formsec {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.datos--text {
+    text-align: center;
+    margin-top: 20px;
+
+}
+.datos--text h2 {
+    font-size: 60px;
+}
+
+@media (min-width: 480px) {
+    .slider img {
+      display: flex;
+    }
+    .navbar-brand {
+        font-style: italic;
+    }
+  }
+
+  @media screen and (max-width:768px){
+    .contactate {
+        color: blue;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    .datos--text h2{
+        font-size: 33px;
+        color: green;
+    }
+   .form-label {
+    font-size: 18px;
+   }
+  }

@@ -1,0 +1,126 @@
+header {
+    color: yellow;
+}
+
+nav {
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+nav a{
+    font-weight: 8800;
+    text-decoration: none;
+    font-size: 25px;
+}
+.cuerpo {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #f0dc0a, #f1e429, #f3ed3d, #f4f54e, #f6fd5d);;
+ } 
+.logo--nombre {
+    font-size: 40px;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texto {
+    background: linear-gradient(#3c94af,#3cd462 );
+    font-size: 30px;
+    background-clip: movimiento;
+    -webkit-background-clip: movimiento;
+    -moz-background-clip: movimiento;
+    animation: movimiento 3s linear infinite;
+}
+
+@keyframes movimiento {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {filter: hue-rotate(360deg);
+    }
+
+}
+
+.slider {
+
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    
+}
+.slider img {
+    height: 300px;
+    width: 250px;
+    animation: ida 8s ease infinite;
+}
+
+
+.titulo--oferta {
+    height: 200px;
+}
+.titulo--oferta h2 {
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.imagenes--oferta{
+    height: 500px;
+    text-align: center;
+}
+
+.imagenes--oferta img{
+    height: 300px;
+    border-radius: 10%;
+    
+}
+
+.card-body {
+    height: 50px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+
+@media (min-width: 480px) {
+    .slider img {
+      display: flex;
+    }
+    .navbar-brand {
+        font-style: italic;
+    }
+  }
+
+  @media screen and (max-width:768px){
+    .navbar-brand{
+        font-size: 32px;
+    }
+
+    .slider img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .titulo--oferta h2{
+        font-size: 65px;
+    }
+
+    .card-title {
+        color: blue;
+    }
+
+  }
